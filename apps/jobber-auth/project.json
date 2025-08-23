@@ -15,7 +15,8 @@
         "development": {
           "args": ["--node-env=development"]
         }
-      }
+      },
+      "dependsOn": ["generate"]
     },
     "serve": {
       "continuous": true,
