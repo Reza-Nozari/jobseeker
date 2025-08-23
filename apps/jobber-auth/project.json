@@ -35,9 +35,18 @@
         }
       }
     },
-    "test": {
+    "generate": {
+      "executor": "nx:run-commands",
       "options": {
-        "passWithNoTests": true
+        "command": "prisma generate",
+        "cwd": "apps/jobber-auth"
+      }
+    },
+    "migrate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prisma migrate dev",
+        "cwd": "apps/jobber-auth"
       }
     }
   }
