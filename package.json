@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "nx run jobber-auth:generate",
+    "prisma:generate": "nx run jobber-auth:generate",
+    "prisma:migrate": "nx run jobber-auth:migrate"
   },
   "private": true,
   "dependencies": {

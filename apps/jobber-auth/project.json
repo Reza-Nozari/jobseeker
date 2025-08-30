@@ -18,6 +18,9 @@
       },
       "dependsOn": ["generate"]
     },
+    "test": {
+      "dependsOn": ["generate"]
+    },
     "serve": {
       "continuous": true,
       "executor": "@nx/js:node",
